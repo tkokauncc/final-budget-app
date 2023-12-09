@@ -1,0 +1,27 @@
+@hostName = "http://localhost:5000"
+
+###
+
+POST http://localhost:5000/signup
+Content-Type: application/json
+
+{
+    "username":"pavan",
+    "password":"pavan",
+    "email":"pavan@pavan.com"
+}
+
+###
+
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "password":"pavan",
+    "email":"pavan@pavan.com"
+}
+
+###
+
+GET http://localhost:5000/
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NmIzYWE1MmRjMzI3MmMyOWUwMzQ1OSIsImlhdCI6MTcwMTUyODA3NiwiZXhwIjoxNzAyMTI4MDc2fQ.HyjMwVlBefxn64OISk6Vad8pOfDf1-DI3YK2aK_1zuE
